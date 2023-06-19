@@ -11,7 +11,7 @@ Our project entails the development of a Change Data Capture (CDC) solution that
   ```
   git clone https://github.com/hilalklc/Oss-Project
   ```
-3. Move to cdc folder.
+3. Move to folder.
   ```
   cd Oss-Project 
   ```
@@ -22,18 +22,18 @@ Our project entails the development of a Change Data Capture (CDC) solution that
 4. When you see `Kafka Server started` on terminal it's done!
 
 ## Usage
-1. Please open a terminal window in the "cdc" directory and execute the command "docker-compose up" to initiate the Docker Compose process.
+1. Please open a terminal window in the "Oss-Project" directory and execute the command "docker-compose up" to initiate the Docker Compose process.
   ```
   docker-compose up
   ```
-2. In the "cdc" folder, please open a new terminal window and execute the desired command:
+2. In the "Oss-Project" folder, please open a new terminal window and execute the desired command:
   ```
-  docker-compose exec a_application python a_application.py 
+  docker-compose exec app_a python app_a.py 
   ```
   You should see `New documents waiting...` on terminal every 10 seconds.
-3. Open another terminal window in the "cdc" folder and execute the desired command:
+3. Open another terminal window in the "Oss-Project" folder and execute the desired command:
   ```
-  docker-compose exec b_application python b_application.py 
+  docker-compose exec app_b python app_b.py 
   ```
 4. Open fourth and last terminal, connect mongo and insert a document:
   ```
@@ -42,6 +42,9 @@ Our project entails the development of a Change Data Capture (CDC) solution that
   db.example_collection.insertOne({"name": "Hilal", "surname": "Kılıç"})
   ```
 5. When a new document is inserted, you will observe the message "A new document has been sent to Kafka!" in the second terminal, and the message "A new document has been received!" in the third terminal..
+
+## Licence
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
 
