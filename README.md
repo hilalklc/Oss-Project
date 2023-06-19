@@ -30,7 +30,7 @@ Our project entails the development of a Change Data Capture (CDC) solution that
   ```
   docker-compose exec a_application python a_application.py 
   ```
- 3. You should see `New documents waiting...` on terminal every 10 seconds.
+  You should see `New documents waiting...` on terminal every 10 seconds.
 3. Open another terminal window in the "cdc" folder and execute the desired command:
   ```
   docker-compose exec b_application python b_application.py 
