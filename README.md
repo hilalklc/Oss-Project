@@ -9,11 +9,11 @@ Our project entails the development of a Change Data Capture (CDC) solution that
 ## Installation
 1. Firsly, clone this repository:
   ```
-  git clone 
+  git clone https://github.com/hilalklc/Oss-Project
   ```
 3. Move to cdc folder.
   ```
-  cd 
+  cd Oss-Project 
   ```
 3. Run docker compose.
   ```
